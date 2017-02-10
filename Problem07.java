@@ -33,3 +33,4 @@ public class Problem07 {
 		System.out.println("Longest word has " + maxLetters + " letters and the count of words is: " + wordCount);
 	}
 }
+//one of my first programs

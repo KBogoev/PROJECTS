@@ -38,7 +38,7 @@ public class AllWork {
 			}
 		} else {
 
-			System.out.println("Brat ne stava, tuka nqma zadacha, nqma kvo da vzema");
+			System.out.println("There are no tasks here!");
 		}
 		return null;
 

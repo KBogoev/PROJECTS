@@ -88,31 +88,31 @@ public class Employee {
 		if (this.currentTask == null) {
 
 			this.currentTask = allWork.getNextTask();
-			System.out.println("Ae, brat, zimam si edna zadachica " + this.currentTask.getNameOfTask()
-					+ " i pochvam da q bachkam qko!!!");
+			System.out.println("I take a task " + this.currentTask.getNameOfTask()
+					+ " and begin to work!!!");
 		}
 
 		if (this.isTaskReady()) {
 
 			if (this.hoursLeft > 0) {
-				System.out.println("Are svurshi se i taq raota sq da pochvam druga");
+				System.out.println("I finished it and start another one");
 				this.currentTask = allWork.getNextTask();
 			} else {
 
-				System.out.println("Ae brat stiga tolkova za dneska, umorih se, utre she produlja!!!");
+				System.out.println("It's the end of the working day!!!");
 				this.currentTask = null;
 			}
 		} else {
 
 			if (this.hoursLeft == 0) {
 
-				System.out.println("Stiga tolkova za dneska, utre she q dovursha taq zadacha !!!");
+				System.out.println("The working day ended, i will finish it tomorrow !!!");
 			}
 		}
 	}
 
 	void showReport() {
-		System.out.println("Chai da napisha edin doklad za shefa");
+		System.out.println("I'm going to write a report");
 		System.out.println("Worker's name: " + this.name);
 		System.out.println("Task's name: " + this.currentTask.getNameOfTask());
 		System.out.println("Hours for the worker left: " + this.getHoursLeft());
@@ -121,8 +121,8 @@ public class Employee {
 
 	void startWorkingDay() {
 
-		System.out.println("Dobroutro na vsichki kolegi!");
-		System.out.println("Az sum " + this.name + " i pochvam qko da bachkam!!!");
+		System.out.println("Good morning!");
+		System.out.println("I am " + this.name + " and i start to work!!!");
 		this.hoursLeft = 8;
 	}
 

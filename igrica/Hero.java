@@ -57,8 +57,8 @@ public class Hero {
 
 		if (this.isInForest()) {
 
-			System.out.println("Az sum spas i si hodq prez gorata!!!");
-			System.out.println("Vzimam edin gad i pochvam da go biq");
+			System.out.println("I am Spas and i walk through the forrest!!!");
+			System.out.println("There is a beast.I will start a fight with it!");
 			Gad gad = this.forest.getNextGad();
 			do {
 
@@ -73,12 +73,12 @@ public class Hero {
 
 				if (gad.getBlood() <= 0) {
 
-					System.out.print("Ubih " + gad.getName());
+					System.out.print("I killed " + gad.getName());
 					if (!this.items.contains(gad.getItem())) {
 						this.items.add(gad.getItem());
-						System.out.print(" i vzeh itema " + gad.getItem());
+						System.out.print(" an i took the item" + gad.getItem());
 					}
-					System.out.println(", produljavam napred!!!");
+					System.out.println(", and keep walking!!!");
 					this.forest.getGadove().remove(this.forest.getGadove().size() - 1);
 					break;
 				}
@@ -92,12 +92,12 @@ public class Hero {
 			} while (true);
 		} else {
 
-			System.out.println("Az sum spas i vlizam v kruchmata da piq edna rakiq!!!");
+			System.out.println("I am spas and go into the pub for a drink!!!");
 
 			if (this.blood < 100) {
 
 				this.blood = 100;
-				System.out.println("Piinah samo edna, kolkoto da prezaredq kravta");
+				System.out.println("I drank only one to reload the blood");
 			} else {
 
 				int possibilityToGetDrunkLikeAPig = rand.nextInt(10) + 1;
@@ -107,10 +107,10 @@ public class Hero {
 															// reshih :D
 
 					this.blood -= 10;
-					System.out.println("Brat, taka se otrqzah, che mi padna kruvta s 10.");
+					System.out.println("I drank so much that my blood  fall down with 10.");
 				} else {
 
-					System.out.println("Malee, za malko da prekalq s pitietata i da mi sa zeme 10 ot kruvta");
+					System.out.println("Oh my god, i was so close to overdo with the driks and to lose 10 percent from my blood");
 				}
 			}
 		}

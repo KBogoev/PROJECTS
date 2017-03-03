@@ -25,7 +25,7 @@ public class SimpleNotepad implements INotepad {
 			}
 
 			System.out.println("Simple notepad with " + pages.length
-					+ " pages is been created, blagodarq vi che se doverihte na nas!!!");
+					+ " pages is been created, thank you for teh trust!!!");
 		}
 	}
 
@@ -37,7 +37,7 @@ public class SimpleNotepad implements INotepad {
 			this.pages[index] = new Page();
 		}
 
-		System.out.println("Simple notepad with 5 pages is been created, ae chao!");
+		System.out.println("Simple notepad with 5 pages is been created, have a nice day!");
 	}
 
 	@Override
@@ -46,7 +46,7 @@ public class SimpleNotepad implements INotepad {
 		if (pageNumber + 1 > 0) {
 
 			this.pages[pageNumber].addText(text);
-			System.out.println("Dobaven beshe teks, have a nice day!");
+			System.out.println("A text has been aded to the page, have a nice day!");
 		}
 	}
 
@@ -56,7 +56,7 @@ public class SimpleNotepad implements INotepad {
 		if (pageNumber + 1 > 0) {
 
 			this.pages[pageNumber].setText(text);
-			System.out.println("Zadaden beshe nov tekst, chao!");
+			System.out.println("New text has been set to the page!");
 		}
 	}
 
@@ -66,7 +66,7 @@ public class SimpleNotepad implements INotepad {
 		if (pageNumber + 1 > 0) {
 
 			this.pages[pageNumber].setText(null);
-			System.out.println("Iztrit beshe teksta na stranica " + pageNumber + " i tq veche e prazna");
+			System.out.println("The text on page " + pageNumber + " has been deleted");
 		}
 	}
 

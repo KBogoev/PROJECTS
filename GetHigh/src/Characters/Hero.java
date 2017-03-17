@@ -9,13 +9,19 @@ import Items.Item;
 
 public class Hero extends Character {
 
-	private Collection<Heart> hearts = new ArrayList<Heart>();
-	private Collection<Coin> coins = new ArrayList<Coin>();
+
+	private int moneyBalance;
 	@Override
 	public void shoot() {
-		// TODO Auto-generated method stub
-		
+
+		//strelq, kato v zavisimost ot orujieto vzima opredeleni procenti ot kravta loshite tvari
+		//toest damage mu se zadava v zavisimost ot orujieto koeto si kupuva
 	}
 
+	public void buyGun() {
+
+		//dokuto ne suberesh opredelenite moneti ne mojesh da si kupish orujie s po-golqm damage
+
+	}
 	
 }

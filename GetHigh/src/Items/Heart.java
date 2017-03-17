@@ -2,10 +2,11 @@ package Items;
 
 public class Heart implements Item {
 
+	private Hero hero;
 	@Override
-	public void boost() {
-		// TODO Auto-generated method stub
-		
+	public void boost(Hero hero) {
+
+		//boostva healtha na hero
 	}
 
 }

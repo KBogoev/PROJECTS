@@ -2,5 +2,5 @@ package Items;
 
 public interface Item {
 
-	void boost();
+	void boost(Hero hero);
 }

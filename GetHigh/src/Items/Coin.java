@@ -2,10 +2,12 @@ package Items;
 
 public class Coin implements Item {
 
+	private final value;
+	private Hero hero;
 	@Override
-	public void boost() {
-		// TODO Auto-generated method stub
-		
+	public void boost(Hero hero) {
+
+		//pribavq kum moneyBalance na geroq stoinostta na monetata
 	}
 
 }

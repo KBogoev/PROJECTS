@@ -1,10 +1,10 @@
 package Items;
-
+// stenite da se puskat na random
 public class Wall implements Damageable {
 
 	@Override
 	public void makeDamage() {
-		// TODO Auto-generated method stub
+		// udari li te stena umirash
 		
 	}
 
